@@ -10,8 +10,7 @@
 		function load_ajax(){
             $.ajax({
                 url : "result.php",		// send request to file result.php on server
-                //type : "post",			// post method
-                type : "get",			// GET method
+                type : "post",			// post method
                 dataType : "text",		// data type of server respose
                 data : {				// list of arguments will be sent to server
                 	number_ : $('#number').val()
