@@ -27,16 +27,16 @@ try{
     $stmt->execute();
 
     // Khai báo fetch kiểu mảng kết hợp
-    $stmt->setFetchMode(PDO::FETCH_ASSOC); 
+    $stmt->setFetchMode(PDO::FETCH_ASSOC);
 
     // Lấy danh sách kết quả
     $result = $stmt->fetchAll();	
     // Kiểm tra mảng có giá trị hay không
     if (!count($result)){
     	echo "Database is empty";
-    } else { 
+    } else {
 
-    	// // RETURN THE RESULT IN TEXT TYPE 
+    	// RETURN THE RESULT IN TEXT TYPE 
    //  	echo '<table border="1" cellspacing="0" cellpadding="10">';
 			// echo '<tr>';
 			// 	echo '<th>Track_id</th>';
